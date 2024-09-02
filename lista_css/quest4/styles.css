@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    border: 1px solid #DDDDDD;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    font-size: 13px;
+    color: #999999;
+    font-weight: bold;
+    text-align: center;
+}
+
+td {
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+    
+}
+
+td:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+td:nth-child(2) {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666666;
+}
+
+td:nth-child(3){
+    background-color: #F7F7F7;
+    font-weight: bold;
+}
+td:nth-child(5),
+td:nth-child(7),
+td:nth-child(9),
+td:nth-child(11) {
+    background-color: #F7F7F7;
+}
+tr:nth-child(5), tr:nth-child(17) {
+    border-top: 2px solid #CCCCCC;
+}
+.libertadores td:first-child,
+.pre-libertadores td:first-child,
+.sul-americana td:first-child,
+.rebaixados td:first-child {
+    font-weight: bold;
+}
+
+.libertadores td:first-child {
+    color: #003366;
+}
+
+.pre-libertadores td:first-child {
+    color: #1398BE;
+}
+
+.sul-americana td:first-child {
+    color: #DE9800;
+}
+
+.rebaixados td:first-child {
+    color: #C91B04;
+}
+
+.legenda {
+    margin-top: 20px;
+    font-size: 10px;
+    color: #8F8F8F;
+}
+
+.legenda div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.legenda span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.legenda .libertadores {
+    background-color: #003366;
+}
+
+div.leg{
+    font-size: 10px;
+    color: #555555;
+    text-align: left;
+
+    span.libertadores {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+        background-color: #003366;
+    }
+
+    span.pre-libertadores {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+        background-color: #1398BE;
+    }
+
+    span.sul-americana {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+        background-color: #DE9800;
+    }
+
+    span.rebaixados {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+        background-color: #C91B04;
+    }
+}
+.legendas {
+    font-size: 10px;
+    color: #555555;
+    text-align: left;
+}
+
+.legendas .maiuscula {
+    font-weight: bold;
+}
+
+.legendas .minuscula {
+    font-weight: normal;
+}

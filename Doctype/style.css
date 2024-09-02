@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.imagem {
+    float: left;
+    width: 30%;
+    margin-right: 2%;
+}
+
+.texto {
+    width: 68%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+  

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplicar Array</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 300px;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Multiplicar Array</h1>
+  <p>Insira os números do array separados por vírgula:</p>
+  <input type="text" id="arrayInput" placeholder="Exemplo: 2, 4, 6">
+  <p>Insira o número para multiplicar:</p>
+  <input type="number" id="multiplierInput" placeholder="Exemplo: 3">
+  <button onclick="multiplyArray()">Multiplicar</button>
+  <div id="result"></div>
+</div>
+
+<script>
+  function multArray(array, multiplicador) {
+    return array.map(num => num * multiplicador);
+  }
+
+  function multiplyArray() {
+    const arrayInput = document.getElementById('arrayInput').value;
+    const multiplierInput = parseFloat(document.getElementById('multiplierInput').value);
+
+    const numberArray = arrayInput.split(',').map(num => parseFloat(num.trim())).filter(num => !isNaN(num));
+
+    if (numberArray.length === 0 || isNaN(multiplierInput)) {
+      document.getElementById('result').innerText = 'Por favor, insira números válidos.';
+      return;
+    }
+
+    const resultArray = multArray(numberArray, multiplierInput);
+    document.getElementById('result').innerText = `Resultado: ${resultArray.join(', ')}`;
+  }
+</script>
+
+</body>
+</html>

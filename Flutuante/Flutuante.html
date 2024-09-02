@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            border: 1px solid red;
+        }
+        .header {
+            height: 100px;
+            background-color: #1E90FF;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 24px;
+            border: 1px solid red;
+        }
+        .main {
+            display: flex;
+            border: 1px solid red;
+        }
+        .nav {
+            width: 25%;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        .nav a {
+            display: block;
+            margin: 10px 0;
+        }
+        .content {
+            width: 75%;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        .footer {
+            height: 50px;
+            background-color: #1E90FF;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            font-size: 14px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Imagem
+        </div>
+        <div class="main">
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">Serviços</a>
+                <a href="#">Contato</a>
+            </div>
+            <div class="content">
+                Box Direito
+            </div>
+        </div>
+        <div class="footer">
+            Crie seu site - Todos os direitos reservados
+        </div>
+    </div>
+</body>
+</html>

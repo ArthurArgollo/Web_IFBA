@@ -1,0 +1,60 @@
+body {
+    font-family: Arial;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 600px;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+th {
+    background-color: #66C5E3;
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+    font-size: 12px;
+}
+
+thead tr:first-child th {
+    background-color: #0D5188;
+    font-size: 14px;
+    padding: 5px;
+    color: white;
+}
+
+td {
+    padding: 2px;
+    text-align: center;
+    font-size: 12px;
+}
+
+td.posicao {
+    background-color: silver;
+    width: 10%;
+}
+
+td.populacao {
+    width: 15%;
+}
+
+td.cidade {
+    text-align: left;
+    color: #0D5188;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #C7E7F3;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #C7E7F3;
+}

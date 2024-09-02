@@ -1,0 +1,87 @@
+.body{
+    flex-direction: column;
+}
+
+.TUDO{
+    flex-direction: line;
+    display: flex;
+}
+
+.label{
+    float: left;
+    display: block;
+}
+
+.nsei{
+    float: right;
+    display: block;
+}
+
+.batata{
+    width: 450px;
+    justify-content: space-between;
+}
+
+.butao{
+    height: 143.42px;
+    width: 100px; 
+    flex-direction: column;
+    margin-left: 200px;
+    display: flex;
+}
+
+.imagem{
+    height: 100px;
+    width: 100px;
+    background-image: url(R.jpeg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.quadrado{
+    height: 400px;
+    width: 750px;
+    display: flex;
+    background-color: #a0c5db;
+    flex-direction: column;
+}
+
+.sessao1{
+    font-size: medium;
+    height: 100px;
+    width: 450px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #a0c5db;
+}
+
+div.sessao2{
+    font-size: medium;
+    height: 100%;
+    width: 600px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #a0c5db; 
+}
+
+.bloco2{
+    width: 450px;
+    justify-content: space-between;
+}
+
+.TUDO2{
+    flex-direction: line;
+    display: flex;
+    margin-top: 90px;
+}
+
+.TUDO3{
+   flex-direction: column; 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 80px;
+}

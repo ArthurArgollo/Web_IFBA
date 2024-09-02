@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Formulário de Informações Pessoais</title>
+</head>
+<body>
+    <h2>Formulário de Informações Pessoais</h2>
+    <form action="processar_formulario.cgi" method="post">
+        <table border="0">
+            <tr>
+                <td>Nome Completo:</td>
+                <td><input type="text" name="nome_completo" size="50"></td>
+            </tr>
+            <tr>
+                <td>Sexo:</td>
+                <td>
+                    <input type="radio" name="sexo" value="masculino"> Masculino<br>
+                    <input type="radio" name="sexo" value="feminino"> Feminino<br>
+                    <input type="radio" name="sexo" value="outro"> Outro
+                </td>
+            </tr>
+            <tr>
+                <td>Estado Civil:</td>
+                <td>
+                    <select name="estado_civil">
+                        <option value="solteiro">Solteiro</option>
+                        <option value="casado">Casado</option>
+                        <option value="divorciado">Divorciado</option>
+                        <option value="viuvo">Viúvo</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Endereço:</td>
+                <td><input type="text" name="endereco" size="50"></td>
+            </tr>
+            <tr>
+                <td>Cidade:</td>
+                <td><input type="text" name="cidade" size="30"></td>
+            </tr>
+            <tr>
+                <td>UF:</td>
+                <td>
+                    <select name="uf">
+                        <option value="ac">AC</option>
+                        <option value="al">AL</option>
+                        <option value="am">AM</option>
+                        <option value="ap">AP</option>
+                        <option value="ba">BA</option>
+                        <option value="ce">CE</option>
+                        <option value="df">DF</option>
+                        <option value="es">ES</option>
+                        <option value="go">GO</option>
+                        <option value="ma">MA</option>
+                        <option value="mt">MT</option>
+                        <option value="ms">MS</option>
+                        <option value="mg">MG</option>
+                        <option value="pa">PA</option>
+                        <option value="pb">PB</option>
+                        <option value="pr">PR</option>
+                        <option value="pe">PE</option>
+                        <option value="pi">PI</option>
+                        <option value="rj">RJ</option>
+                        <option value="rn">RN</option>
+                        <option value="rs">RS</option>
+                        <option value="ro">RO</option>
+                        <option value="rr">RR</option>
+                        <option value="sc">SC</option>
+                        <option value="sp">SP</option>
+                        <option value="se">SE</option>
+                        <option value="to">TO</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Submeter"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

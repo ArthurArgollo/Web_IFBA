@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+  
+  /* Estilo para os parágrafos */
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 20px;
+}
+  
+  /* Estilo para as listas não ordenadas */
+  ul {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    list-style-type: none; /* Remove marcadores padrão */
+}
+  
+  /* Estilo para itens da lista */
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+  
+  li:last-child {
+    border-bottom: none; /* Remove a linha inferior do último item */
+}
+  
+  /* Estilo para o texto gerado pelo script */
+  p:last-of-type {
+    font-weight: bold;
+    color: #555;
+}
+  

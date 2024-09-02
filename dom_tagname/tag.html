@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questão 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <p>
+    Lista não-ordenada da questão anterior:
+  </p>
+  <ul>
+    <li> Primeiro item da lista</li>
+    <li> Segundo item da lista</li>
+    <li> Terceiro item da lista</li>
+  </ul>
+  <p>
+    Lista não-ordenada criada por mim:
+  </p>
+  <ul>
+    <li> Item 1</li>
+    <li> Item 2</li>
+    <li> Item 3</li>
+  </ul>
+  <script>
+    const secondListItems = document.getElementsByTagName("ul")[1].children;
+    document.write("<p> Esses são os " + secondListItems.length + " elementos da 'li' criada por mim.</p>");
+    for (let i = 0; i < secondListItems.length; i++) {
+      document.write("<p>" + secondListItems[i].innerHTML + "</p>");
+    }
+  </script>
+</body>
+
+</html>

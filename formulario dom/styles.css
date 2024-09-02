@@ -1,0 +1,20 @@
+
+/* Estilo para os campos com foco */
+input:focus, select:focus {
+    background-color: #e0f7fa;
+    border: 2px solid #00796b;
+}
+
+/* Estilo para os campos gerais */
+.campo {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo para o contador de caracteres */
+.contador {
+    font-size: 12px;
+    color: #666;
+}
